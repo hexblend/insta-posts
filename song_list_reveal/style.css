@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #f8f9fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.trigger {
+	font-size: 2em;
+	padding-bottom: 2px;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	color: blue;
+	transition: 0.1s ease-in-out all;
+}
+.trigger:hover {
+	text-decoration: none;
+	border-bottom: 2px solid blue;
+	color: blue;
+}
+.trigger:visited {
+	color: blue;
+}
+.songsView {
+	position: absolute;
+	top: 20%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	width: 100%;
+	background: #efefef;
+	transition: 0.2s ease-in-out all;
+	z-index: 2;
+}
+.songsView__header {
+	background: white;
+	padding: 15px 0;
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: 0px -4px 9px -2px rgba(0, 0, 0, 0.4);
+	color: orangered;
+}
+.play-btn {
+	margin-right: 5px;
+	transition: 0.1s ease-in-out all;
+}
+.song {
+	border-radius: 0 !important;
+	margin-bottom: 1px;
+}
+.song:hover .play-btn {
+	color: orangered;
+}
+.backdrop {
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: block;
+}
+.backdrop:hover {
+	cursor: pointer;
+}
