@@ -1,0 +1,45 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.button-wrapper {
+	display: flex;
+	align-items: center;
+}
+.btn {
+	font-family: 'Roboto', sans-serif;
+	background: #ff0000;
+	border-radius: 2px;
+	border: 0;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 10px 16px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	font-size: 14px;
+}
+.btn.subscribed {
+	background: rgba(0, 0, 0, 0.1);
+	color: #606060;
+}
+.btn:hover {
+	cursor: pointer;
+}
+.btn:focus {
+	outline: none;
+}
+.bell {
+	width: 20px;
+	height: 20px;
+	background: url('./svg/bell.svg') no-repeat center center;
+	margin-left: 10px;
+	display: none;
+}
+.bell:hover {
+	cursor: pointer;
+}
+.bell.ring {
+	background: url('./svg/bell-ring.svg') no-repeat center center;
+}
