@@ -1,0 +1,21 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 50px);
+	overflow: hidden;
+}
+.list-row {
+	position: relative;
+	transition: 0.075s ease-in-out all;
+	margin-top: 5px;
+}
+.list-row:hover {
+	cursor: pointer;
+}
+.btn-group {
+	position: absolute;
+	right: -140px;
+	bottom: 0;
+	top: 0;
+}
