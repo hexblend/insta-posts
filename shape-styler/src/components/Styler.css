@@ -1,0 +1,72 @@
+.styler {
+	background: #011627;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 16px;
+	min-width: 300px;
+	box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.5);
+}
+.styler-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 900;
+	margin-bottom: 16px;
+}
+.styler-prop {
+	margin-bottom: 16px;
+}
+.styler-propName {
+	color: #3afd79;
+	font-weight: 900;
+	text-align: left;
+	margin: 8px 0;
+}
+.styler-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+.propName {
+	color: white;
+	font-weight: 500;
+	text-transform: lowercase;
+	margin-right: 8px;
+	width: 100px;
+	text-align: left;
+}
+.styler-slider {
+	width: 90%;
+	margin-right: 8px;
+}
+.styler-propValue {
+	color: #fff;
+	width: 50px;
+}
+.prop-color {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+.red {
+	background: #fd3a3a;
+}
+.green {
+	background: #00fc2f;
+}
+.blue {
+	background: #0059fc;
+}
+.button,
+.button:focus {
+	background: #3afd79;
+	border: 0;
+	border-radius: 4px;
+	padding: 5px 12px;
+	outline: none;
+	transition: 0.2s ease-in-out;
+}
+.button:hover {
+	cursor: pointer;
+	background: #fff;
+}

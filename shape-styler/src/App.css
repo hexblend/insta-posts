@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+.App {
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.code-box {
+	text-align: left;
+	position: absolute;
+	bottom: 20px;
+}
