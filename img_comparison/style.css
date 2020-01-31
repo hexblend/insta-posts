@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	height: 100vh;
+	width: 100%;
+}
+.black-and-white {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	background: url('./img/black-and-white.jpg') no-repeat center center;
+	background-size: cover;
+}
+.colorful {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	background: url('./img/colorful.jpg') no-repeat center center;
+	background-size: cover;
+}
