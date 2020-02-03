@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eaeaea;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.wrapper {
+	display: flex;
+}
+.trigger {
+	background: #55deff;
+	border: 0;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	outline: 0;
+	cursor: pointer;
+}
+.input {
+	border-radius: 2px;
+	border: 0;
+	outline: 0;
+	transition: 0.25s ease-in-out all;
+	width: 0;
+	padding: 0;
+	margin-right: -25px;
+}
+.input-open {
+	width: 70vw;
+	padding: 0 10px;
+	margin-right: 10px;
+}
