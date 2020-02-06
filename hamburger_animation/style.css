@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f9f8f9;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon {
+	width: 60px;
+	height: 45px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.icon span {
+	position: absolute;
+	height: 9px;
+	width: 100%;
+	background: rgb(49, 41, 128);
+	border-radius: 9px;
+	transition: 0.25s ease-in-out all;
+}
+/* initial lines postion */
+.icon span:nth-child(1) {
+	top: 0;
+}
+.icon span:nth-child(2) {
+	top: 18px;
+	left: 0;
+}
+.icon span:nth-child(3) {
+	top: 36px;
+}
+/* open class animation */
+.icon.open span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 18px;
+}
+.icon.open span:nth-child(2) {
+	transform: rotate(45deg);
+	opacity: 0;
+}
+.icon.open span:nth-child(3) {
+	transform: rotate(-45deg);
+	top: 18px;
+}
