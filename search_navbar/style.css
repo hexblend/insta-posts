@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f9f8f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 14px;
+}
+nav {
+	width: 100%;
+	background: pink;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+	background: #eee;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+}
+.logo {
+	margin-right: 50px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+.left-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.1s ease-in-out;
+}
+.links li {
+	display: inline-block;
+}
+.links li a {
+	text-decoration: none;
+	color: black;
+	margin-right: 20px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+}
+.links li a:hover {
+	border-bottom: 1px solid black;
+}
+.right-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-icon {
+	font-size: 1.2em;
+	cursor: pointer;
+	transform-origin: center;
+}
+
+.search-form {
+	position: absolute;
+	left: 30px;
+	right: 90px;
+	top: 0;
+	bottom: 0;
+	transition: 0.6s ease-in-out;
+	opacity: 0;
+	z-index: -1;
+}
+.search-form-input {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	font-size: 1.6em;
+	padding: 0 10px;
+	background: #eee;
+	outline: 0;
+}
