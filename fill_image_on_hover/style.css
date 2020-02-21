@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.image {
+	transition: 0.3s ease-in-out all;
+	border-radius: 5px;
+	cursor: pointer;
+	clip-path: circle(35px at 50px 50px);
+}
+.image:hover {
+	clip-path: circle(100%);
+}
