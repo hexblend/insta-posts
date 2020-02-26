@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f9f8f9;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	letter-spacing: 0.1px;
+}
+.text {
+	text-transform: uppercase;
+	font-size: 5em;
+	font-weight: 900;
+	color: #bbb;
+	position: relative;
+	overflow: hidden;
+}
+.text:before {
+	content: 'Hover\00a0me';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	color: #111;
+	overflow: hidden;
+	transition: 1s ease-in-out;
+}
+.text:hover:before {
+	width: 100%;
+}
