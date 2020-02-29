@@ -1,0 +1,43 @@
+body {
+	background: #191244;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.btn {
+	width: 90px;
+	height: 25px;
+	border: 0;
+	border-radius: 2px;
+	outline: 0;
+	position: relative;
+	overflow: hidden;
+	transition: 0.2s ease-in-out;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.15s linear;
+}
+.btn:hover {
+	cursor: pointer;
+	transform: scale(1.08);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+.btn:hover .icon {
+	top: 150%;
+	animation: moveFromTop 0.15s linear forwards;
+	animation-delay: 0.15s;
+}
+@keyframes moveFromTop {
+	0% {
+		top: -50%;
+	}
+	100% {
+		top: 50%;
+	}
+}
