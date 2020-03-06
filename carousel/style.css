@@ -1,0 +1,29 @@
+body {
+	background: #3e3e3e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.carousel {
+	width: 80vw;
+	height: 250px;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.slides {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	display: flex;
+	width: 100%;
+	transition: 1s ease-in-out;
+}
+.slide {
+	min-width: 100%;
+	min-height: 250px;
+	height: auto;
+}
