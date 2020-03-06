@@ -1,0 +1,4 @@
+.list-group-item {
+    left: -105%;
+    transition: .3s ease-in-out;
+}
