@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #f9f8f9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.liquid-button {
+	background: #11a7c1;
+	color: #fff;
+	border: 0;
+	border-radius: 3px;
+	font-weight: 400;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: 0.2s ease-in-out all;
+	outline: 0;
+	min-width: 80px;
+	background: transparent url('./liquid.png');
+	background-repeat: repeat-y;
+}
+.liquid-button:hover {
+	transform: scale(1.1);
+}
+@keyframes wave {
+	0% {
+		background-position: left center;
+		background-size: 0px 20px;
+	}
+	100% {
+		background-position: 0 200px;
+		background-size: 100px 100px;
+	}
+}
