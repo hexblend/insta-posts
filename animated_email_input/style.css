@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #f8fcff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.email-input-wrapper {
+	position: relative;
+}
+.form {
+	background: pink;
+	position: relative;
+	width: 250px;
+	overflow: hidden;
+	z-index: 10;
+	border-radius: 3px;
+}
+.email-input {
+	width: 100%;
+	border: 0;
+	font-size: 1.2em;
+	background: #eaf1ff;
+	outline: 0;
+	box-sizing: border-box;
+	padding: 10px 40px 10px 10px;
+	color: #2c3d4e;
+}
+.send-button {
+	width: 100%;
+	position: relative;
+	background: #3a72aa;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 300;
+	position: absolute;
+	padding: 10px 0;
+	left: 87%;
+	border: 0;
+	outline: 0;
+	transition: 0.3s ease-in-out all;
+	font-weight: 500;
+}
+.send-button:hover {
+	cursor: pointer;
+	background: #4284c6;
+}
+.send-envelope {
+	position: absolute;
+	left: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.1s ease-in-out all;
+}
+.hidden-envelope {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.5em;
+	color: #3a72aa;
+}
+@keyframes fadeOut {
+	to {
+		top: 40%;
+		opacity: 0;
+	}
+}
