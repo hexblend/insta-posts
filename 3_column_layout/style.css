@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+/* General styles */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f9f8f9;
+	font-family: 'Roboto', sans-serif;
+	padding: 25px;
+}
+
+/* Card styles overall */
+.card {
+	max-width: 200px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+	margin-right: 25px;
+	transition: 0.2s ease-in-out;
+}
+.card .card-header {
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.col-1.card .card-header {
+	background: url('https://images.unsplash.com/photo-1508556497405-ed7dcd94acfc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+		no-repeat center center / cover;
+}
+.col-2.card .card-header {
+	background: url('https://images.unsplash.com/photo-1562043236-559c3b65a6e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80')
+		no-repeat center center / cover;
+}
+.col-3.card .card-header {
+	background: url('https://images.unsplash.com/photo-1503924087716-07cbd5f49b21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80')
+		no-repeat center center / cover;
+}
+.card .card-body {
+	padding: 20px;
+}
+.card .card-body h2 {
+	margin-bottom: 5px;
+}
+
+/* Destkop layout until Breakpoint 1 */
+.wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+/* Breakpoint 1 */
+@media (max-width: 700px) {
+	.wrapper {
+		flex-wrap: wrap;
+	}
+	.col-2 {
+		margin-right: 0;
+	}
+	.col-3 {
+		margin-top: 25px;
+	}
+}
+/* Breakpoint 2 */
+@media (max-width: 480px) {
+	.wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.card {
+		margin: 0;
+		margin-bottom: 25px;
+		width: 100%;
+	}
+	.col-3 {
+		margin-bottom: 0;
+	}
+}
+/* Breakpoint 3 */
+@media (max-width: 375px) {
+	.card {
+		max-width: 100%;
+	}
+}
