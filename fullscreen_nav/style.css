@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap');
+
+/* General styles */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #e8ebf7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 14px;
+	position: relative;
+}
+
+/* Open button */
+.trigger {
+	background: #fd6e2c;
+	outline: 0;
+	padding: 8px 15px;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 2em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+	transition: 0.15s ease-in-out;
+	cursor: pointer;
+}
+.trigger:hover {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Nav position and opening class */
+.full-screen-nav {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s ease-in-out;
+	display: none;
+}
+.open-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Backgroup position and animation */
+.backdrop {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.92);
+	cursor: pointer;
+	animation: fadeIn 0.2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* List item styling & animation */
+ul {
+	z-index: 9999;
+	position: relative;
+}
+ul li {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 30px;
+	animation: 0.25s ease-in-out animateList forwards;
+}
+ul li:last-child {
+	margin-bottom: 0;
+}
+@keyframes animateList {
+	from {
+		margin-top: -60px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+
+/* Item links styles and hover effect*/
+ul li a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 3em;
+	font-weight: 900;
+	text-transform: uppercase;
+	transition: 0.15s ease-in-out;
+}
+ul li a:hover,
+ul li a i {
+	color: #fd6e2c;
+}
