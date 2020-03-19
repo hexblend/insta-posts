@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+/* General styles */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 14px;
+	position: relative;
+}
+.wrapper {
+	width: 100%;
+	text-align: center;
+	overflow: hidden; /* Important to hide images */
+	padding: 20px;
+}
+
+/* Images Section Styling */
+.animated-section {
+	display: flex;
+	justify-content: space-around;
+}
+.animated-section .img-1 {
+	width: 50%;
+	height: 250px;
+	background: url('./img/1.jpg') no-repeat center center / cover;
+	margin-right: 20px;
+	border-radius: 5px;
+}
+.animated-section .img-2 {
+	width: 50%;
+	height: 250px;
+	background: url('./img/2.jpg') no-repeat center center / cover;
+	border-radius: 5px;
+}
+.trigger {
+	background: #e94f37;
+	outline: 0;
+	padding: 8px 15px;
+	color: #fff;
+	border: 0;
+	border-radius: 5px;
+	font-size: 1.2em;
+	margin-top: 80px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	transition: 0.15s ease-in-out;
+	cursor: pointer;
+}
+.trigger:hover {
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation classes */
+.slideFromLeft {
+	animation: 1.2s ease-in-out slideFromLeft forwards;
+}
+.slideFromRight {
+	animation: 1.2s ease-in-out slideFromRight forwards;
+}
+@keyframes slideFromLeft {
+	from {
+		margin-left: -100%;
+	}
+	to {
+		margin-left: 0;
+	}
+}
+@keyframes slideFromRight {
+	from {
+		margin-right: -100%;
+	}
+	to {
+		margin-rigth: 0;
+	}
+}
