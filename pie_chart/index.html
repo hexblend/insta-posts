@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pie Chart</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h1>Pie Chart</h1>
+		<canvas id="myChart" style="width: 500px!important"></canvas>
+
+		<div class="input-block">
+			<label for="pizza-input">Pizzas sold</label>
+			<input
+				type="text"
+				name="pizza-input"
+				class="pizza-input"
+				placeholder="Pizza number"
+			/>
+		</div>
+
+		<div class="input-block">
+			<label for="steak-input">Steaks sold</label>
+			<input
+				type="text"
+				name="steak-input"
+				class="steak-input"
+				placeholder="Pizza number"
+			/>
+		</div>
+
+		<div class="input-block">
+			<label for="hamburger-input">Hamburgers sold</label>
+			<input
+				type="text"
+				name="hamburger-input"
+				class="hamburger-input"
+				placeholder="Pizza number"
+			/>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
