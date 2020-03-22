@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 3000px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 14px;
+	position: relative;
+	overflow-x: hidden;
+}
+.section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	border-radius: 5px;
+	padding: 500px 50px;
+}
+.section .text {
+	width: 50%;
+	height: 100%;
+	margin-right: 50px;
+}
+.section .text h3 {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+.section .image {
+	width: 300px;
+	height: 300px;
+	background: url('./img.jpg') no-repeat center center / cover;
+	transform: scale(5) rotate(35deg);
+	/* transform: rotate(35deg); */
+}
