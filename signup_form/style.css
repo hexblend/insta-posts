@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #fbfbff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+/* Form styling */
+.form {
+	min-width: 500px;
+}
+.form-title {
+	text-align: center;
+	margin-bottom: 16px;
+	font-size: 2em;
+}
+/* Error */
+.error-block {
+	padding: 12px;
+	width: 100%;
+	background: #ffb9c5;
+	color: #721121;
+	border-radius: 3px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	display: none;
+}
+.error {
+	font-size: 1.1em;
+}
+.success {
+	background: #c1ffb9;
+	color: #16790d;
+}
+
+/* Label + Input */
+.input-block {
+	text-align: center;
+}
+.label {
+	display: block;
+	margin-bottom: 8px;
+	font-size: 1.1em;
+	text-align: left;
+}
+.input-info {
+	text-align: left;
+	margin-top: -18px;
+	margin-bottom: 24px;
+	color: #888;
+}
+.input {
+	width: 100%;
+	border-radius: 3px;
+	font-size: 1.1em;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	color: #1d1d1d;
+	margin-bottom: 24px;
+	outline: 0;
+	box-sizing: border-box;
+}
+.input-submit {
+	padding: 8px 20px;
+	border: 0;
+	font-size: 1.1em;
+	background: #258bad;
+	color: #fff;
+	border-radius: 3px;
+	outline: 0;
+	transition: 0.15s ease-in-out background;
+}
+.input-submit:hover {
+	background: #24a4cf;
+	cursor: pointer;
+}

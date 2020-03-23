@@ -36,5 +36,4 @@ body {
 	height: 300px;
 	background: url('./img.jpg') no-repeat center center / cover;
 	transform: scale(5) rotate(35deg);
-	/* transform: rotate(35deg); */
 }
