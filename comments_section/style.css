@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+/* General styles */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #fafafa;
+	min-height: 100vh;
+	font-size: 14px;
+	position: relative;
+	padding-top: 30%;
+}
+.wrapper {
+	padding: 0 20px;
+}
+/* Add new comment form */
+form {
+	margin-bottom: 40px;
+}
+form .addCommInput {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 10px;
+	min-height: 80px;
+	font-size: 1em;
+	outline: 0;
+	resize: none;
+	box-sizing: border-box;
+	margin-bottom: 8px;
+}
+.buttons-area {
+	text-align: right;
+	display: none;
+}
+.submitBtn,
+.cancelBtn,
+.replyBtn {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 3px;
+	font-size: 0.9em;
+	cursor: pointer;
+	outline: 0;
+}
+.submitBtn {
+	color: white;
+	background: blueviolet;
+}
+.submitBtn:hover {
+	background: #9830fa;
+}
+.cancelBtn,
+.replyBtn {
+	color: #969696;
+	background: transparent;
+	padding-right: 5px;
+}
+.cancelBtn:hover,
+.replyBtn:hover {
+	color: #292929;
+}
+
+/* Comments section */
+.comment {
+	margin-bottom: 16px;
+	animation: fadeIn 0.1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.comment-content {
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+	color: #292929;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 5px;
+}
+.comment-buttons {
+	text-align: left;
+}
+/* Replies comment section */
+.replies-body {
+	padding-left: 64px;
+}
+.replyBtn {
+	padding-left: 5px;
+	padding-top: 0;
+}
