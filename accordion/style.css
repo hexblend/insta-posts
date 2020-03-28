@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
+/* General styles */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-size: 14px;
+	position: relative;
+}
+
+/* Accordion */
+.accordion {
+	max-width: 400px;
+}
+.tab-heading {
+	background: #092e3d;
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 0.6em;
+	color: #fff;
+	cursor: pointer;
+}
+.tab-heading h2 {
+	pointer-events: none;
+}
+.tab-content {
+	background: #f3f3f3;
+	overflow-y: hidden;
+	height: 0;
+	transition: 0.5s ease;
+}
+.tab-content p {
+	margin: 20px;
+}
