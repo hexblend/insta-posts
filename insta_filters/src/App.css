@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+.App {
+	font-family: 'Ubuntu', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+}
+.image-container {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 24px;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+.filter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	border-radius: 5px;
+}
+.image {
+	max-width: 500px;
+	height: auto;
+	max-height: 400px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.uploadForm {
+	text-align: center;
+}
+.filsColors {
+	margin-top: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filterPreview {
+	width: 50px;
+	height: 50px;
+	margin-right: 8px;
+}
+.filterPreview:last-child {
+	margin-right: 0;
+}
+.filterPreview:hover {
+	cursor: pointer;
+}

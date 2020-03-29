@@ -10,7 +10,9 @@ body {
 	background: #0a2e36;
 	overflow-x: hidden;
 }
+
 .buttons-bar {
+	/* Bar Styles */
 	padding-top: 24px;
 	text-align: center;
 }
@@ -34,6 +36,7 @@ body {
 	color: #fff;
 }
 .wrapper {
+	/* Responsive View Styles */
 	width: 100%;
 	padding: 24px;
 	box-sizing: border-box;
