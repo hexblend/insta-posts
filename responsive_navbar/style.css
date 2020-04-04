@@ -3,11 +3,15 @@
 	margin: 0;
 	padding: 0;
 }
+html,
+body {
+	position: relative;
+	overflow-x: hidden;
+}
 body {
 	background: #3e3e3e;
 	min-height: 100vh;
 	font-family: 'Poppins';
-	overflow-x: hidden;
 }
 /* Desktop view */
 .navbar {
