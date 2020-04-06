@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f9f8f9;
+	font-family: 'Roboto', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+.card {
+	max-width: 350px;
+	background: #efeff1;
+	border-radius: 8px;
+}
+.card-header {
+	position: relative;
+	overflow: hidden;
+}
+.shoe {
+	max-width: 100%;
+	position: relative;
+	z-index: 3;
+	transform: rotate(-10deg);
+	filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.2));
+	transition: 0.2s ease-in-out;
+}
+.card .card-body {
+	padding: 24px;
+	padding-top: 0;
+	text-align: center;
+	display: none;
+	margin-top: 50px;
+	animation: 0.3s ease-in-out fadeIn forwards;
+}
+
+.shoe-name,
+.shoe-dimension {
+	text-transform: uppercase;
+	color: #242424;
+	font-weight: 900;
+	font-size: 2em;
+	letter-spacing: 0.2px;
+}
+.user-selection-form {
+	margin-top: 32px;
+}
+.sizes-option-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sizes-option-label {
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	color: #242424;
+	font-size: 1.5em;
+	margin-right: 16px;
+}
+.sizes-option {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: white;
+	border: 0;
+	width: 60%;
+	padding: 5px 10px;
+	color: #9d9d9d;
+	position: relative;
+	display: block;
+	background: #fff url('./img/caret-down.svg') no-repeat 100% center / 30px 10px !important;
+	outline: 0;
+}
+.colors-option {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.color {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: 8px;
+}
+.color:last-child {
+	margin-right: 0;
+}
+.color:nth-child(1) {
+	background: linear-gradient(to bottom, #b20b32, #000000);
+}
+.color:nth-child(2) {
+	background: linear-gradient(to bottom, #0b38b2, #000000);
+}
+.color:nth-child(3) {
+	background: linear-gradient(to bottom, #bfbec1, #000000);
+}
+.color:nth-child(4) {
+	background: linear-gradient(to bottom, #000, #000000);
+}
+
+.submit-btn {
+	background: #242424;
+	color: #fff;
+	border: 0;
+	padding: 5px 30px;
+	border-radius: 5px;
+	font-size: 1em;
+	margin-top: 32px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+	transition: all 0.15s ease-in-out;
+	cursor: pointer;
+}
+.submit-btn:hover {
+	transform: scale(1.1);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card:hover .card-body {
+	display: block;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
