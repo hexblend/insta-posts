@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+/* Desktop */
+.landing {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100vh;
+}
+.cover-image {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+.siteTitle {
+	font-size: 5em;
+	margin-bottom: 16px;
+}
+.siteDescription {
+	font-size: 2em;
+}
+.buttons {
+	margin-top: 32px;
+}
+.meetMeBtn,
+.contactBtn {
+	text-decoration: none;
+	background: #6d63fd;
+	color: white;
+	padding: 8px 25px;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: 1em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+.meetMeBtn:hover,
+.contactBtn:hover {
+	cursor: pointer;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
+}
+.contactBtn {
+	background: rgb(187, 187, 187);
+	color: black;
+	margin-left: 20px;
+}
+/* Smaller Desktop */
+@media (max-width: 1140px) {
+	.landing {
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 30px;
+	}
+	.landing-left {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+/* Tablet */
+@media (max-width: 600px) {
+	.siteTitle {
+		font-size: 4em;
+	}
+	.siteDescription {
+		font-size: 1.5em;
+	}
+	.meetMeBtn,
+	.contactBtn {
+		font-size: 1em;
+	}
+}
+/* Mobile */
+@media (max-width: 480px) {
+	.siteTitle {
+		font-size: 3em;
+		margin-bottom: 8px;
+	}
+	.siteDescription {
+		font-size: 1.2em;
+	}
+	.meetMeBtn,
+	.contactBtn {
+		font-size: 0.9em;
+	}
+}
