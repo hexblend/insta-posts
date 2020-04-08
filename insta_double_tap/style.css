@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.post {
+	position: relative;
+	cursor: pointer;
+}
+.insta-post {
+	max-width: 400px;
+	height: auto;
+	border-radius: 5px;
+}
+.likes {
+	font-size: 1.5em;
+	margin-top: 8px;
+	color: #3a3a3a;
+}
+.heart-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	filter: drop-shadow(0 19px 38px rgba(0, 0, 0, 0.7));
+	transform-origin: center center;
+	width: 0;
+}
+.animate-like {
+	animation: 2s animateLike ease-in-out forwards;
+}
+@keyframes animateLike {
+	0% {
+		width: 0;
+	}
+	5% {
+		width: 180px;
+	}
+	10% {
+		width: 150px;
+	}
+	20%,
+	35% {
+		width: 160px;
+	}
+	40%,
+	100% {
+		width: 0;
+	}
+}
