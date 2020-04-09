@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #161D2D;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+.grid img {
+	width: 120px;
+	animation: fadeInAndScale 0.3s ease-in-out forwards;
+}
+@keyframes fadeInAndScale {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.backdrop {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0);
+	z-index: 5;
+	animation: backdropAnimation 0.85s linear forwards;
+	animation-delay: 8.2s;
+}
+@keyframes backdropAnimation {
+	to {
+		background: rgba(0, 0, 0, 0.95);
+	}
+}
+.line {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 200px;
+	width: 100%;
+	background: #161D2D;
+	z-index: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: -100%;
+	animation: lineAnimation 1.3s ease-in-out forwards;
+	animation-delay: 9s;
+}
+@keyframes lineAnimation {
+	to {
+		left: 0;
+	}
+}
+.text {
+	color: #fff;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	letter-spacing: 5px;1
+	font-size: 2.4em;
+	opacity: 0;
+	animation: textAnimation 0.45s ease-in-out forwards;
+	animation-delay: 10.5s;
+}
+@keyframes textAnimation {
+	0% {
+		display: block;
+		opacity: 0;
+		letter-spacing: 0;
+	}
+	60% {
+		opacity: 1;
+		font-size: 2.5em;
+		letter-spacing: 6px;
+	}
+	100% {
+		opacity: 1;
+		font-size: 2.4em;
+		letter-spacing: 4px;
+	}
+}
+.text-2 {
+	color: #fff;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	letter-spacing: 4px;
+	font-size: 2.4em;
+	display: none;
+	animation: textAnimation 0.45s ease-in-out forwards;
+	animation-delay: 0;
+}

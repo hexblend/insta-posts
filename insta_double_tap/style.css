@@ -14,6 +14,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+/* Post styling */
 .post {
 	position: relative;
 	cursor: pointer;
@@ -37,6 +38,7 @@ body {
 	transform-origin: center center;
 	width: 0;
 }
+/* Tap animation */
 .animate-like {
 	animation: 2s animateLike ease-in-out forwards;
 }
