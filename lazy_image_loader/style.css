@@ -4,7 +4,7 @@
 	margin: 0;
 }
 body {
-	background: #161D2D;
+	background: #161d2d;
 	min-height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
@@ -51,7 +51,7 @@ body {
 	transform: translateY(-50%);
 	height: 200px;
 	width: 100%;
-	background: #161D2D;
+	background: #161d2d;
 	z-index: 6;
 	display: flex;
 	align-items: center;
@@ -70,7 +70,7 @@ body {
 	font-weight: 800;
 	text-transform: uppercase;
 	padding-bottom: 10px;
-	letter-spacing: 5px;1
+	letter-spacing: 5px;
 	font-size: 2.4em;
 	opacity: 0;
 	animation: textAnimation 0.45s ease-in-out forwards;
