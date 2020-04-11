@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #e6e6e6;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+.banner {
+	width: 100%;
+	min-height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background: #ffffff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.banner-title {
+	text-transform: uppercase;
+	font-size: 6em;
+	background-image: url('https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+	background-size: 800px auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.banner-description {
+	color: #000;
+	font-size: 1.3em;
+	font-weight: 300;
+}
