@@ -13,6 +13,9 @@ mongoose
 	.then(() => console.log('DB Connected'))
 	.catch((error) => console.log(error));
 
+// Middlewares
+app.use(express.json());
+
 // Routes
 const postsRoutes = require('./routes/posts');
 app.use('/api/posts', postsRoutes);
