@@ -14,9 +14,8 @@ mongoose
 	.catch((error) => console.log(error));
 
 // Middlewares
-app.get('/', function (req, res) {
-	res.send('hello world');
-});
+const postsRoutes = require('./routes/posts');
+app.use('/api/posts', postsRoutes);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
