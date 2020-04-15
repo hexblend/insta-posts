@@ -10,7 +10,6 @@ import {
 import HomePage from './pages/HomePage';
 import CreatePostPage from './pages/CreatePostPage';
 import SinglePostPage from './pages/SinglePostPage';
-
 import Navigation from './components/Navigation';
 
 function App() {
