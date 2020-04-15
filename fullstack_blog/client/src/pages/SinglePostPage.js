@@ -8,7 +8,9 @@ function SinglePostPage(props) {
 	useEffect(() => {
 		axios
 			.get('http://localhost:5000/api/posts/get', {
-				id: postID,
+				data: {
+					id: postID,
+				},
 			})
 			.then((response) => console.log(response))
 			.catch((error) => console.log(error));
