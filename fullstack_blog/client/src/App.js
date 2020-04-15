@@ -7,8 +7,9 @@ import {
 	Switch,
 	Route,
 } from 'react-router-dom';
-import HomePage from '../src/pages/HomePage';
-import CreatePostPage from '../src/pages/CreatePostPage';
+import HomePage from './pages/HomePage';
+import CreatePostPage from './pages/CreatePostPage';
+import SinglePostPage from './pages/SinglePostPage';
 
 import Navigation from './components/Navigation';
 
@@ -24,6 +25,7 @@ function App() {
 				<Navigation />
 				<Switch>
 					<Route exact path="/" component={HomePage} />
+					<Route exact path="/post/:id" component={SinglePostPage} />
 					<Route path="/create" component={CreatePostPage} />
 				</Switch>
 			</Router>
