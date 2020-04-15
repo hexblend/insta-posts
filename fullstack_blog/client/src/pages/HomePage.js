@@ -15,7 +15,6 @@ function HomePage() {
 	return (
 		<div className="HomePage">
 			<h1 className="mb-4">Posts</h1>
-
 			{posts.map((post) => (
 				<Post post={post} key={post._id} />
 			))}

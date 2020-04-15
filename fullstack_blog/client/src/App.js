@@ -24,7 +24,7 @@ function App() {
 				<Navigation />
 				<Switch>
 					<Route exact path="/" component={HomePage} />
-					<Route exact path="/post/:id" component={SinglePostPage} />
+					<Route path="/post/:id" component={SinglePostPage} />
 					<Route path="/create" component={CreatePostPage} />
 				</Switch>
 			</Router>
