@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f9f8f9;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.dropzone {
+	height: 400px;
+	width: 400px;
+	border: 2px dashed #ccc;
+	color: #a5a5a5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.2s ease-in-out;
+}
+.hover {
+	color: #2e2e2e;
+	border-color: #646464;
+}
+.validImage {
+	background: #2c354e;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.invalidImage {
+	background: #e25731;
+	border-radius: 4px;
+	color: #fff;
+	border: 0;
+}
+.uploadBtn {
+	text-decoration: none;
+	background: #6d63fd;
+	color: white;
+	margin-top: 16px;
+	padding: 8px 20px;
+	border-radius: 5px;
+	border: 0;
+	font-weight: 400;
+	font-size: 0.8em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+	transition: all 0.2s ease-in-out;
+	outline: 0;
+}
+.uploadBtn:hover {
+	cursor: pointer;
+	box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+}
