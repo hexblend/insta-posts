@@ -4,7 +4,7 @@ const dropzone = document.querySelector('.dropzone');
 dropzone.addEventListener('dragover', (e) => {
 	e.preventDefault();
 	dropzone.setAttribute('class', 'dropzone hover');
-	dropzone.innerText = 'Drop files here to upload';
+	dropzone.innerText = 'Drop an image here to upload';
 });
 
 // Leave the zone
@@ -26,7 +26,7 @@ dropzone.addEventListener('drop', (e) => {
 	return uploadImage(image);
 });
 
-// Valid image / upload
+// Upload valid image
 const uploadImage = (image) => {
 	dropzone.innerText = "Added '" + image.name + "'";
 	dropzone.setAttribute('class', 'dropzone validImage');
