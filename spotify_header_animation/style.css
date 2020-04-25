@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #fff;
+	min-height: 200vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+.header {
+	background: linear-gradient(rgba(44, 44, 44, 0.85), rgba(24, 24, 24, 1));
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	/* JS Animation: background-gradient to 1; border-bottom: 1px solid #949494;*/
+}
+.content_expanded {
+	display: flex;
+	position: absolute;
+	bottom: 5px;
+	left: 25px;
+	transition: .17s ease-in-out;
+	/* JS Animation: bottom: 50px; */
+}
+.album_cover {
+	max-width: 150px;
+	max-height: 150px;
+	width: auto;
+	height: auto;
+	margin-right: 20px;
+}
+.type {
+	text-transform: uppercase;
+	letter-spacing: 1.6px;
+	font-size: .6em;
+	margin-top: 25px;
+	color: #fff; 
+}
+.title {
+	text-transform: capitalize;
+	color: #fff;
+	margin-top: 4px;  
+}
+.description {
+	color: #949494;
+	font-size: .7em;
+	margin-top: 8px;
+}
+.details {
+	margin-top: 5px;
+}
+.author {
+	color: #fff;
+	text-decoration: none;
+	font-size: .7em;
+}
+.author:hover {
+	text-decoration: underline;
+}
+.songs_number {
+	position: relative;
+	padding-left: 6px;
+}
+.songs_number::before {
+	content:"\A";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #a1a0a0;
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+	left: 0;
+}
+.play_button {
+	position: relative;
+	background: #1EB853;
+	margin-top: 8px;
+	border: 0;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	outline: 0;
+	transition: .15s ease-in-out all;
+}
+.play_icon {
+	width: 15px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.play_button:hover {
+	cursor: pointer;
+	background: #1FD960;
+}
+.content_collapsed {
+	position: absolute;
+	bottom: -50px;
+	left: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: calc(100% - 50px);
+	transition: .2s ease-in-out;
+	/* JS Animation: bottom: 5px; */
+}
+.left_side {
+	display: flex;
+	align-items: center;
+}
+.cover_small {
+	max-width: 35px;
+	max-height: 35px;
+}
+.title_small {
+	font-size: 1.2em;
+}
+.btn_small {
+	margin-top: 0;
+	width: 25px;
+	height: 25px;
+}

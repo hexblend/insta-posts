@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Spotify Header Animation</title>
+		<script src="https://kit.fontawesome.com/81c2c05f29.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<div class="header">
+			<div class="content_expanded">
+				<img src="https://i.scdn.co/image/ab67706f00000002ef5f56fdfa910a37ed9212b0" alt="Album Cover" class="album_cover" />
+				<div class="header_text">
+					<p class="type">Playlist</p>
+					<h1 class="title">This is Post Malone</h1>
+					<p class="description">Hear Post Malones's new album "Hollywood's Bleeding" plus all the essential hits.</p>
+				
+					<div class="details">
+						<span class="description">Created by</span>
+						<a href="#" class="author">Spotify</a>
+						<span class="description songs_number">44 songs, 2hr 29 min</span>
+					</div>
+				
+					<button class="play_button">
+						<svg height="28" role="img" width="28" viewBox="0 0 24 24" class="play_icon">
+							<polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"></polygon>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="content_collapsed">
+				<div class="left_side">
+					<img src="https://i.scdn.co/image/ab67706f00000002ef5f56fdfa910a37ed9212b0" alt="Album Cover" class="album_cover cover_small" />
+					<h1 class="title title_small">This is Post Malone</h1>
+				</div>
+				<button class="play_button btn_small">
+					<svg height="28" role="img" width="28" viewBox="0 0 24 24" class="play_icon icon_small">
+						<polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"></polygon>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+
