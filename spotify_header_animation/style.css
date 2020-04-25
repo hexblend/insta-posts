@@ -14,7 +14,7 @@ body {
 	height: 200px;
 	position: relative;
 	overflow: hidden;
-	/* JS Animation: background-gradient to 1; border-bottom: 1px solid #949494;*/
+	/* JS Animation: background-gradient to 1; */
 }
 .content_expanded {
 	display: flex;

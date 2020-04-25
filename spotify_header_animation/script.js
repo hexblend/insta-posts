@@ -9,9 +9,10 @@ window.addEventListener('scroll', e => {
 
 	// BG Going Dark
 	const bg_opacity = 0.85 + percentage / 100;
-	header.style.background = `linear-gradient(rgba(24, 24, 24, ${bg_opacity}), rgba(24, 24, 24, 1)`;
+	header.style.background = 
+		`linear-gradient(rgba(24, 24, 24, ${bg_opacity}), rgba(24, 24, 24, 1)`;
 
-	// Content Expanded Fade Out
+	// Content Slide Up / Down
 	if(percentage > 70) {
 		content_expanded.style.bottom = 50 + 'px'
 		content_collapsed.style.bottom = 5 + 'px';
