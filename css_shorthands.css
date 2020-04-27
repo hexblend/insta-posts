@@ -1,0 +1,44 @@
+/* Background */
+div {
+	background-color: #333;
+	background-image: url(image.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+div {
+	background: #333 url(image.jpg) no-repeat center center fixed /
+		cover;
+}
+
+/* Border */
+div {
+	border-width: 1px;
+	border-color: #333;
+	border-style: solid;
+	border-left-width: 2px;
+	border-left-color: #111;
+	border-left-style: solid;
+}
+
+div {
+	border: 1px solid #333;
+	border-left: 2px solid #111;
+}
+/* Font */
+
+p {
+	color: #000000;
+}
+p {
+	color: #000;
+}
+p {
+	color: black;
+}
+
+div {
+	margin: 16px 24px 8px 2px;
+	padding: 32px 0;
+}

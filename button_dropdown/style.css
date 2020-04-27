@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #f8f9fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.dropdown-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.btn {
+	background: #219af3;
+	font-family: inherit;
+	color: #fff;
+	padding: 7px 20px 6px 20px;
+	border: 0;
+	border-radius: 2px;
+	font-weight: 300;
+	font-size: 14px;
+	outline: 0;
+	transition: .15s ease-in-out;
+	z-index: 4;
+}
+.btn:hover {
+	cursor: pointer;
+	background: #2ca1f5;
+}
+.btn.text {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.btn.arrow {
+	padding: 7px 10px 6px 10px;
+	border-left: 1px solid #2a8fd8;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.dropdown {
+	background: #2887cc;
+	color: #fff;
+	list-style: none;
+	padding: 5px 0;
+	border-radius: 2px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+	right: 0;
+	display: none;
+	animation: .25s ease-in-out slideIn forwards;
+}
+.dropdown li {
+	padding: 5px 8px;
+	font-weight: 300;
+	font-size: .85em;
+	transition: .15s ease-in-out;
+}
+.dropdown li:hover {
+	background: #2574ac;
+	cursor: pointer;
+}
+@keyframes slideIn {
+	from {
+		top: 15px;
+		opacity: 0;
+	}
+	to {
+		top: 35px;
+		opacity: 1;
+	}
+}
