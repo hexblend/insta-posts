@@ -1,0 +1,25 @@
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #191b26;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* Button styles */
+.btn {
+	background: #219af3;
+	color: #fff;
+	width: 30px;
+	height: 20px;
+	border: 0;
+	border-radius: 2px;
+	font-size: 14px;
+	outline: 0;
+	cursor: pointer;
+}
