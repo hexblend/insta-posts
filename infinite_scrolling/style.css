@@ -1,0 +1,17 @@
+/* General styling */
+* {
+	padding: 0;
+	margin: 0;
+}
+.photosGrid {
+	display: flex;
+	flex-wrap: wrap;
+}
+.singlePhoto {
+	width: calc(33.3333% - 6px);
+	margin: 3px;
+}
+.singlePhoto img {
+	width: 100%;
+	display: block;
+}
