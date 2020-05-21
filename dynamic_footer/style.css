@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	background: #f9f9f9;
+	font-family: 'Barlow', sans-serif;
+}
+
+footer {
+	background: white;
+	position: sticky;
+	top: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 30px;
+	color: #ababab;
+	border-top: 1px solid #e5e5e5;
+}

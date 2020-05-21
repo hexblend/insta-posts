@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	background: #f9f9f9;
+	font-family: 'Barlow', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#imageUploadInput {
+	display: none;
+}
+.image{
+	max-width: 300px;
+	height: auto;
+	margin-bottom: 32px;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+.image-name {
+	margin: 16px 0;
+	text-align: center;
+	display: none;
+}
+.loading-wrapper {
+	min-width: 30%;
+	position: relative;
+	display: none;
+}
+.loading-bar {
+	width: 20%;
+	height: 20px;
+	background: #4d5563;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.loading-bar-bg {
+	width: 100%;
+	height: 20px;
+	background: #2B303A;
+	border-radius: 10px;
+}
+.loading-number {
+	margin-top: 16px;
+	text-align: center;
+}
+.button {
+	color: white;
+	border: 0;
+	border-radius: 0.5rem;
+	padding: 12px 20px;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+	font-weight: 400;
+	position: relative;
+	transition: .2s ease-in-out;
+	outline: none;
+}
+.button:hover {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+.choose-image-button {
+	background: #2B303A;
+	margin-right: 8px;
+}
+.upload-button {
+	background: #FF4000;
+}

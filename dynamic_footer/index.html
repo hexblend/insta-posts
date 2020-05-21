@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fill image on hover</title>
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+	<footer>
+		<p>Copyright &copy;2020 Scalipsum</p>
+	</footer>
+	<footer>
+		<p>Copyright &copy;<span class="year"></span> Scalipsum</p>
+	</footer>
+
+	<script>
+		const yearEl = document.querySelector('.year');
+		const date = new Date();
+		const year = date.getFullYear();
+		yearEl.innerText = year;
+	</script>
+</body>
+
+</html>

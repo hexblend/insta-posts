@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@1,800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #f1f3f7;
+	color: #000;
+	font-family: 'Barlow Semi Condensed', sans-serif;;
+	font-weight: 800;
+	text-align: center;
+	font-size: 32px;
+}
+.category {
+	margin-bottom: 100px;
+}
+.category h3 {
+	margin: 32px 0;
+}
+
+/* Float */
+.float-cols .col1,
+.float-cols .col2,
+.float-cols .col3 {
+	width: 30%;
+	height: 700px;
+	float: left;
+	background: #e1e7f3;
+	margin-right: 5%;
+	margin-bottom: 100px;
+}
+.float-cols .col3 {
+	margin-right: 0;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+	.float-cols .col1,
+	.float-cols .col2,
+	.float-cols .col3 {
+		width: 45%;
+	}
+	.float-cols .col1 {
+		margin-right: 10%;
+	}
+	.float-cols .col2 {
+		margin-right: 0;
+	}
+	.float-cols .col3 {
+		margin-left: 
+		calc((100% - 45%) / 2);
+	}
+}
+/* Phone */
+@media (max-width: 768px) {
+   .float-cols .col1,
+	.float-cols .col2,
+	.float-cols .col3 {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+
+
+
+/* Inline-block */
+.inline-block-cols .col1,
+.inline-block-cols .col2,
+.inline-block-cols .col3 {
+	display: inline-block;
+	width: 30%;
+	height: 700px;
+	background: #e1e7f3;
+	margin-right: 2%;
+}
+.inline-block-cols .col3 {
+	margin-right: 0;
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+	.inline-block-cols .col1,
+	.inline-block-cols .col2,
+	.inline-block-cols .col3 {
+		width: 45%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.inline-block-cols .col1{
+		margin-right: 16px;
+	}
+	.inline-block-cols .col1,
+	.inline-block-cols .col2 {
+		margin-bottom: 16px;
+	}
+}
+/* Phone */
+@media (max-width: 768px) {
+   	.inline-block-cols .col1,
+	.inline-block-cols .col2,
+	.inline-block-cols .col3 {
+		width: 90%;
+	}
+	.inline-block-cols .col1{
+		margin-right: 0;
+	}
+}
+
+
+/* Flexbox */
+.flexbox-cols {
+	display: flex;
+}
+.flexbox-cols .col1,
+.flexbox-cols .col2,
+.flexbox-cols .col3 {
+	flex: 1;
+	width: 30%;
+	height: 700px;
+	background: #e1e7f3;
+	margin-right: 16px;
+}
+.flexbox-cols .col3 {
+	margin-right: 0;
+}
+
+/* Using Inline-block / Float */
+@media (max-width: 1024px) {
+	.flexbox-cols {
+		display: block;
+	}
+	.flexbox-cols .col1,
+	.flexbox-cols .col2,
+	.flexbox-cols .col3 {
+		display: inline-block;
+		width: 45%;
+	}
+	.flexbox-cols .col1,
+	.flexbox-cols .col2 {
+		margin-bottom: 16px;
+	}
+}
+
+/* Phone */
+@media (max-width: 768px) {
+	.flexbox-cols .col1,
+	.flexbox-cols .col2,
+	.flexbox-cols .col3 {
+		width: 90%;
+		margin-left: 5%;
+		margin-bottom: 16px;
+	}
+}
+
+
+
+
+
