@@ -8,6 +8,7 @@ const loadingWrapper = document.querySelector('.loading-wrapper');
 const loadingBar = document.querySelector('.loading-bar');
 const loadingNumber = document.querySelector('.loading-number');
 
+
 let imageData;
 input.addEventListener('change', e => {
     if (e.target.files.length) {
@@ -17,14 +18,17 @@ input.addEventListener('change', e => {
     }
 });
 
+// Form submit
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const api_link = 'http://127.0.0.1:5000/api/users/changeAvatar/5ec641fb4ae26211326d3c4a';
-
+    // Link
+    const api_link = '...';
+    // Data
     const formData = new FormData();
     formData.append('image', imageData);
-
+    // Config
     const config = {
+        // Show Loading Bar while uploading
         onUploadProgress: progressEvent => {
             const { loaded, total } = progressEvent;
             const persentege = Math.round((loaded * 100) / total)
@@ -32,12 +36,15 @@ form.addEventListener('submit', (e) => {
             loadingBar.style.width = persentege + '%';
             loadingNumber.innerText = persentege + '%';
         },
+        // Telling the server what type of content we send
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     }
-
+    // Request
     axios.patch(api_link, formData, config).then(res => {
+        // Show Image after uploading
         image.style.display = 'block';
-        loadingWrapper.style.display = 'none';
         image.setAttribute('src', res.data.user.newAvatar);
+        // Hide progress bar after uploading
+        loadingWrapper.style.display = 'none';
     });
 });

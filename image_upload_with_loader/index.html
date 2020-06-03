@@ -6,31 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Fill image on hover</title>
 	<link rel="stylesheet" href="./style.css" />
-	<link rel="stylesheet" type="text/css"
-		href="https://cdn.rawgit.com/rikmms/progress-bar-4-axios/0a3acf92/dist/nprogress.css" />
 </head>
 
 <body>
-	<img class="image">
+	<!-- Image preview -->
+	<img class="image" />
 
+	<!-- Form -->
 	<form class="form">
 		<div>
 			<label for="imageUploadInput" class="button choose-image-button">
 				Choose image
 				<input type="file" id="imageUploadInput">
 			</label>
-			<button type="submit" class="button upload-button">Upload</button>
+			<button type="submit" class="button upload-button">
+				Upload
+			</button>
 		</div>
 		<p class="image-name">Image name</p>
 	</form>
 
+	<!-- Loading bar -->
 	<div class="loading-wrapper">
 		<div class="loading-bar-bg"></div>
 		<div class="loading-bar"></div>
 		<p class="loading-number">20%</p>
 	</div>
 
-	<!-- axios -->
+	<!-- Axios and Custom JS -->
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="script.js"></script>
 </body>
